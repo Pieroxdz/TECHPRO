@@ -1,0 +1,46 @@
+#hero{
+    background-color: var(--negro);
+    color: var(--blanco);
+    padding: 10rem 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .hero-content{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: repeat(2, 1fr);
+    } 
+}
+
+.hero-text{
+    text-align: center;
+    padding-top: 5rem;
+}
+
+@media (min-width: 768px) {
+    .hero-text{
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 0;
+    }
+}
+
+/* En el global ya tiene definido para mobile */
+@media (min-width: 768px) {
+    .hero-text h1{
+        font-size: 10rem;
+        line-height: 1;
+    }
+}
+
+.precio span{
+    font-size: 6rem;
+    font-weight: 900;
+}

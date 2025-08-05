@@ -1,0 +1,77 @@
+:root{
+    --fuentePrimaria: "Roboto";
+    --fuenteSecundaria: "Lato";
+
+    --primario: #1073BA;
+    --secundario:#00DA55;
+    --gris:#3B3B3B;
+    --blanco:#ffffff;
+    --negro:#1F1E1E;
+    --grisClaro: #e1e1e1;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5% /* 1REM = 10px */;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: var(--fuentePrimaria);
+    line-height: 1.5;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3{
+    font-weight: 900;
+    font-family: var(--fuenteSecundaria);
+    margin: 2.5rem 0;
+}
+
+h1{
+    font-size: 6rem;
+}
+
+h2{
+    font-size: 3.6rem;
+}
+
+h3{
+    font-size: 2.8rem;
+}
+
+/* p{
+    NOTA: En algunos casos en base a la guía de estilos se puede modificar el tamaño por defecto
+} */
+
+/* Utilidades */
+.container{
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.degradado-verde{
+    background: linear-gradient(to right, var(--primario) 0%, var(--secundario) 100% );
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+}

@@ -1,0 +1,33 @@
+#iconos{
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.iconos-content{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .iconos-content{
+        flex-direction: row;
+    }
+}
+
+.icono{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icono img{
+    width: 5rem;
+}
+
+.icono h3{
+    color: var(--primario);
+    text-transform: uppercase;
+}
+
